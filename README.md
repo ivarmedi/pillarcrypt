@@ -11,19 +11,22 @@ Installation
 
 Pillarcypt is installed by
 
-1. placing the `crypt.py` in the `pillar` extension module subfolder. The tree should look like this:
-```
-extension_modules/
-└── pillar
-    └── decrypt.py
-```
-For more information, see http://docs.saltstack.com/en/latest/ref/configuration/master.html#extension-modules
+1. placing the `decrypt.py` in the `pillar` extension module subfolder. The tree should look like this:
+
+  ```
+  extension_modules/
+  └── pillar
+      └── decrypt.py
+  ```
+
+  For more information, see http://docs.saltstack.com/en/latest/ref/configuration/master.html#extension-modules
 
 2. Adding decrypt to the `ext_pillar` directive in the salt master config:
-```
-ext_pillar:
-  - decrypt: {}
-```
+
+  ```
+  ext_pillar:
+    - decrypt: {}
+  ```
 
 Configuration
 --------------
