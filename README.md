@@ -44,3 +44,12 @@ ext_pillar:
 
 All available options can be found in the gnupg documenation:
 http://pythonhosted.org/gnupg/gnupg.html#gnupg-module
+
+Dependency
+------------
+
+Install python-gnupg - https://pythonhosted.org/python-gnupg/
+
+```
+pip install python-gnupg
+```
