@@ -6,6 +6,15 @@ Decrypt gpg secrets stored in any ext_pillar. The implementation is more or less
 Make sure you have a keypair available on the salt master. Follow this guide to set it up:
 https://docs.saltstack.com/en/latest/ref/renderers/all/salt.renderers.gpg.html#setup
 
+Dependency
+------------
+
+Install [python-gnupg - https://pythonhosted.org/python-gnupg/
+
+```
+pip install python-gnupg
+```
+
 Installation
 ------------
 

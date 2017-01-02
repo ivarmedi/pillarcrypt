@@ -26,8 +26,8 @@ def _decrypt_value(encrypted_string):
         if decrypted_string.data == '':
             raise
         return yaml.safe_load(decrypted_string.data)
-    except:
-        log.error('Could not decrypt string. Using its encrypted representation.')
+    except Exception, e:
+        log.exception('Could not decrypt string. Using its encrypted representation.')
         return encrypted_string
 
 
